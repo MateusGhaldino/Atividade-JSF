@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    background-color: #def3ff;
+}
+
+
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para a sessão de Dados Pessoais */
+#dados-pessoais {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#dados-pessoais h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#dados-pessoais p {
+    font-size: 16px;
+}
+
+#dados-pessoais ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+#dados-pessoais ul li {
+    margin-right: 10px; /* Espaço entre os ícones */
+}
+
+#dados-pessoais a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+#dados-pessoais a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do container para dados e foto */
+.dados-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dados-texto {
+    flex: 1;
+}
+
+.dados-foto {
+    margin-left: 10px;
+}
+
+#foto-pessoal {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 100px;
+    border: 3px solid #ccc;
+}
+#icon-imagens{
+    width: 35px;
+    height: 35px;
+}
+
+#experiencia{
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+#formacao{
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#Skills{
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#voluntariado{
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+/* Estilos para as seções de Experiência e Formação */
+
+
+#Skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+#Skills ul li {
+    margin-right: 10px; /* Espaço entre os ícones */
+}
+
+section h2 {
+    color: #333;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+section p {
+    font-size: 16px;
+}

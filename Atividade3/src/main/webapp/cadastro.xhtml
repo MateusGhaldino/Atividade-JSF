@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/_css/main.css" />
+	<title>Cadastro</title>
+</h:head>
+
+<h:body>
+    <div class="form-container">
+
+        <h:form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <h:inputText id="nome" value="#{pessoaBean.nome}" required="true"
+                             requiredMessage="Por favor, informe seu nome." />
+                <h:message for="nome" styleClass="error" />
+
+                <h:commandButton value="Cadastrar" action="#{pessoaBean.adicionaNome}" styleClass="btn-enviar" />
+            </div>
+        </h:form>
+
+        <h:panelGroup rendered="#{not empty pessoaBean.nomesList}">
+            <div class="form-group">
+                <h3>Nome cadastrado:</h3>
+                <h:outputText value="#{pessoaBean.nomesList}" />
+            </div>
+        </h:panelGroup>
+
+    </div>
+</h:body>
+</html>

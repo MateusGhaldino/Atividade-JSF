@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="_css/main.css"/>
+	<title>Formulario</title>
+</h:head>
+<h:body>
+
+    <div class="form-container">
+        <h1>Fale Conosco</h1>
+        <h:form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <h:inputText id="nome" />
+                <h:message for="nome" styleClass="error"/>
+            </div>
+            
+			 <div class="form-group">
+                <label for="assunto">Sobrenome</label>
+                <h:inputText id="Sobrenome"/>
+                <h:message for="Sobrenome" styleClass="error"/>
+            </div>
+            
+            <div class="form-group">
+                <label for="assunto">Fone</label>
+                <h:inputText id="fone"/>
+                <h:message for="fone" styleClass="error"/>
+            </div>
+                        
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <h:inputText id="email"/>
+                <h:message for="email" styleClass="error"/>
+            </div>
+            
+             <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <h:inputTextarea id="mensagem"/>
+                <h:message for="mensagem" styleClass="error"/>
+            </div>
+
+
+
+            <div class="form-group">
+                <h:commandButton value="Enviar" styleClass="btn-enviar"/>
+            </div>
+        </h:form>
+    </div>
+</h:body>
+</html>
